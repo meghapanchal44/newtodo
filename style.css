@@ -56,8 +56,8 @@
 }
 .rectangle-1{
     margin: auto;
-    width:40vw;
-    height: 100vh;
+    width:40%;
+    height: 100%;
     padding: 1vh 2vw 11vh 2vw;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--namjoon);
@@ -72,8 +72,8 @@
     background-color: var(--tealish);
     color: whitesmoke;
     border-radius: 4rem;
-    width: 75vw;
-    height: 50vh;
+    width: 75%;
+    height: 50%;
     text-align: center;
     padding: 1vh 2vw 1vh 2vw;
 }
@@ -149,7 +149,9 @@ footer{
 .footer .footer-right{
     text-align: right;
     display: inline-block;
+    position: relative;
     color: white;
+    left: 10vw;
 }
 /* .span-2{
     
@@ -185,14 +187,23 @@ li{
       text-align: center;
     }
   }
-  @media screen and (max-height:900px) {
+  @media screen and (max-height:1000px) {
+
+      /* .rectangle{
+          height: 100%;
+      } */
     
     .rectangle-1{
-        width: 50vw;
-        height: 50vh;
+        width: 50%;
+        height: 45%;
         padding-bottom: 10vh;
     }
     .rectangle-2{
+        width: 75%;
+        height: 5%;
+        margin-top: 0.5vh;
+    }
+    .rectangle-2s{
         width: 75%;
         height: 5%;
         margin-top: 0.5vh;
