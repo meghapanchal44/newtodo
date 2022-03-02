@@ -15,11 +15,15 @@
     --black-0: rgba(0, 0, 0, 0);
   
   }
+  *{
+    margin: 0;
+    padding: 0;
+}
 .rectangle{
-   
+   /* background-color: #20cdbb; */
     background-image: linear-gradient(323deg, var(--light-navy) 108%, var(--cobalt-two) 34%);
-    height: 100%;
-    width: 100%; 
+    height: 100vh;
+    width: 100vw; 
     padding: 2vh 2vw 2vh 2vw;
     box-sizing: border-box;
 }
@@ -53,8 +57,8 @@
 .rectangle-1{
     margin: auto;
     width:40vw;
-    height: 35vh;
-    padding: 1vh 2vw 1vh 2vw;
+    height: 100vh;
+    padding: 1vh 2vw 11vh 2vw;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--namjoon);
    
@@ -68,10 +72,10 @@
     background-color: var(--tealish);
     color: whitesmoke;
     border-radius: 4rem;
-    width: 75%;
-    height: 50%;
+    width: 75vw;
+    height: 50vh;
     text-align: center;
-    padding: 0.5vh 2vw 1vh 2vw;
+    padding: 1vh 2vw 1vh 2vw;
 }
 .rectangle-2s{
     margin-top: 2vh;
@@ -84,7 +88,7 @@
     width: 75%;
     height: 50%;
     text-align: center;
-    padding: 0.5vh 2vw 1vh 2vw;
+    padding: 1vh 2vw 1vh 2vw;
 }
 
 .line{
@@ -94,6 +98,7 @@
     margin: 1vh 1vw 1vh 1vw;
     width: 35%;
     height: 1%;
+
 }
 .logo{
     margin: auto;
@@ -118,24 +123,36 @@ img{
 li{
     display: inline;
 }
-.footer{
-    position: relative;
-    bottom: -14vh;
-    right: 2vw;
-    width: 100vw;
-
-    height: 5vh;
-  
-    margin: 2vh 0 0;
-  
-    padding: 2vh 0vw 2vh 0vw;
-  
-    background-color: #1c2646;
+footer{
+    position: fixed;
+    bottom: 0;
 }
-.span-2{
+.footer{
+    background-color: #1c2646;
+    width: 100vw;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    text-align: left;
+}
+.footer .footer-left,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer .footer-left{
+    width: 75%;
+}
+.footer .span-2{
+    color: white;
+    opacity: 0.8;
+}
+.footer .footer-right{
+    text-align: right;
+    display: inline-block;
+    color: white;
+}
+/* .span-2{
     
-    
-
     height: 4vh;
   
     opacity: 0.7;
@@ -158,12 +175,10 @@ li{
 }
 li{
     display: inline;
-    position: relative;
-    left: 65vw;
-    top:-10vh;
+  
     color: white;
     opacity: 0.8;
-}
+} */
 @media screen and (max-width: 500px) {
     .span-1 {
       font-size: 1rem;
@@ -173,8 +188,8 @@ li{
   @media screen and (max-height:900px) {
     
     .rectangle-1{
-        width: 50%;
-        height: 25%;
+        width: 50vw;
+        height: 50vh;
         padding-bottom: 10vh;
     }
     .rectangle-2{
