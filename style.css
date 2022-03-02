@@ -58,9 +58,10 @@
     margin: auto;
     width:40%;
     height: 100%;
-    padding: 1vh 4vw 11vh 4 vw;
+    padding: 1vh 4vw 11vh 4vw;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--namjoon);
+    border-radius:0.5rem;
    
 }
 
@@ -102,7 +103,7 @@
 }
 .logo{
     margin: auto;
-    width: 23vw;
+    width: 15vw;
     display: block;
     height: auto;
     align-items: center;
@@ -186,6 +187,16 @@ li{
       font-size: 1rem;
       text-align: center;
     }
+    .logo{
+        margin: auto;
+        width: 23vw;
+        display: block;
+        height: auto;
+        align-items: center;
+        padding-top: 7vh;
+        padding-bottom: 1vh;
+        
+    }
   }
   @media screen and (max-height:1000px) {
 
@@ -195,7 +206,7 @@ li{
     
     .rectangle-1{
         width: 50%;
-        height: 30%;
+        height: 35%;
         padding-bottom: 8vh;
         margin-top: 7vh;
     }
