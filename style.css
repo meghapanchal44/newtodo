@@ -197,23 +197,29 @@ li{
         display: block;
         height: auto;
         align-items: center;
-        padding-top: 7vh;
+        padding-top: 1vh;
         padding-bottom: 1vh;
 
     }
+    .rectangle-1{
+        width: 50%;
+        height: 45%;
+    }
+    .footer{
+        height: 2.1%;
+    }
   }
-  @media screen and (max-height:1000px) {
+  @media screen and (max-height:900px) {
 
       /* .rectangle{
           height: 100%;
       } */
-
+      
     .rectangle-1{
-        width: 30%;
         height: 58%;
     
         padding-bottom: 3vh;
-        margin-top: 7vh;
+        margin-top: 1vh;
     }
     .rectangle-2{
         width: 75%;
