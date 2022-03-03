@@ -33,15 +33,15 @@
      display: flex;
  }
  .logo-s{
-     height: 52.3%;
-     width: 6.2%;
+     height: 23.9px;
+     width: 70px;
      margin: 1.5vh 1vw 0vh;
  }
  .log{
-     width: 75%;
+     width: 100%;
      text-align: center;
      color: white;
-     margin: 1vh 1vw 1vh;
+     margin: 1vh 7vw 1vh 0vw;
      font-family: 'Nunito Sans';
      font-size: 16px;
      font-weight: 800;
