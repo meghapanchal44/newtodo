@@ -24,10 +24,10 @@
                 <label class="input_label">
                     Email or username
                 </label>
-                <input type="text" placeholder="username">
+                <input type="text" placeholder="username" pattern=".+@globex\.com" size="30" required>
             </div>
             <label class="pass_label">Password</label>
-            <input type="password" placeholder="password">
+            <input type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <a href="reading-preference.html">
                 <button class="loginbtn">Log in</button>
             </a>
