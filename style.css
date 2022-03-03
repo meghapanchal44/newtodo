@@ -132,6 +132,7 @@ footer{
 .footer{
     background-color: #1c2646;
     width: 100vw;
+    height: 4.1%;
     margin-top: 5vh;
     box-sizing: border-box;
     text-align: left;
@@ -228,7 +229,8 @@ li{
   
   .fa{
       color: white;
-      opacity: 0.5;
+      opacity: 0.2;
+      margin: 6px 2px 2px 2px;
   }
 
   .footer{
@@ -240,5 +242,6 @@ li{
 
   .white{
       color: white;
-      opacity: 0.5;
+      opacity: 0.2;
+      margin: 10px 300px 3px 0px;
   }
