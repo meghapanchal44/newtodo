@@ -18,14 +18,8 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    margin: 0;
-    padding: 0;
-    background-color: #f7f8fa;
-}
-
  .head{
-     height: 6.2%;
+     height: 10%;
      width: 100%;
      /* margin: 0 0 80px;
      padding: 11px 615.5px 9px 80px; */
@@ -33,17 +27,18 @@
      display: flex;
  }
  .logo-s{
-     height: 23.9px;
-     width: 70px;
-     margin: 1.5vh 1vw 0vh;
+     height: 23px;
+     width: 65.9px;
+     margin: 1.5vh 1vw 1.5vh;
  }
  .log{
-     width: 100%;
+     width: 80%;
+     /* margin-right: 3vw; */
      text-align: center;
      color: white;
-     margin: 1vh 7vw 1vh 0vw;
+     margin: 1.5vh 0vw 1.5vh 0vw;
      font-family: 'Nunito Sans';
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 800;
      font-stretch: normal;
      font-style: normal;
@@ -52,12 +47,13 @@
      text-align: center;
      color: var(--white);
    }
+   
    h1{
        width:50%;
        height:5.4%;
        margin:auto;
-       margin-top: 17.5vh;
-       margin-bottom: 5vh;
+       margin-top: 7.5vh;
+       margin-bottom: 7.5vh;
        font-family: 'Nunito Sans';
        font-size: 28px;
        font-weight: 800;
@@ -68,9 +64,10 @@
        text-align: center;
        color: var(--dark);
    }
+  
    .rectangle-s{
        height: 44.9%;
-       width: 32%;
+       width: 25%;
        border-radius: 4px;
        padding: 6vh 6vw;
        margin: auto;
@@ -83,7 +80,7 @@
        padding-top: 1vh;
        opacity: 0.3;
        font-family:'Nunito Sans';
-       font-size: 12px;      
+       font-size: 14px;      
        font-weight: bold;      
        font-stretch: normal;      
        font-style: normal;
@@ -107,7 +104,7 @@
        padding-top: 1vh;
        opacity: 0.3;
        font-family:'Nunito Sans';
-       font-size: 12px;      
+       font-size: 14px;      
        font-weight: bold;      
        font-stretch: normal;      
        font-style: normal;
@@ -127,19 +124,19 @@
    }    
    .loginbtn{
        width: 100%;
-       height: 20%;
+       height: 25%;
        border: none;
        background-color: var(--tealish);
        border-radius: 22.5px;
        color: white;
        padding: 1vh 1vw;
-       margin-bottom: 2vh;
+       margin-top: 3vh;
+       margin-bottom: 3vh;
    }
    .forgot_label{
        width: 100%;
        height:10%;
        padding-top: 1vh 1vw;
-       margin: 0vh 12vw;
        font-family: 'Nunito Sans';
        font-size: 14px;
        font-weight: normal;
@@ -156,13 +153,13 @@
        justify-content: center;
    }
    .dont{
-       width:50%;
+       width:53%;
        height: 2.8;
        margin-top: 2vh;
-       margin-left: 8vw;
+       /* margin-left: 8vw; */
        opacity: 0.3;
        font-family: 'NunitoSans';
-       font-size: 14px;
+       font-size: 16px;
        font-weight: normal;
        font-stretch: normal;
        font-style: normal;
@@ -172,11 +169,11 @@
        text-align: right;
    }
    .link{
-    width:50%;
+    width:47%;
     height: 2.8;
     margin-top: 2vh;
     font-family: 'NunitoSans';
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -209,19 +206,48 @@
 
   .white{
       padding-left:5px;
-      width: 75%;
+      width: 70%;
       color: white;
+      font-size: 0.8rem;
       opacity: 0.7;
-      margin: 3px 5px 3px 0px;
+      margin: 1vh 1vw 1vh 10vw;
   }
   .fa{
     color: white;
     opacity: 0.7;
     margin: 6px 2px 2px 2px;
+    font-size: 00.8rem;
+    padding-right: 1vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+   
+    /* .forgot_label{
+        margin: 0vh 5vw;
+    } */
+    /* .log{
+        margin: 1vh ;
+    } */
+    /* .dont{
+        margin-left: 23vw;
+    } */
+    .rectangle-s{
+        width: 60%
+    }
+}
+@media screen and (max-width: 500px) {
     h1{
         font-size: 18px;
     }
 }
+@media screen and (min-height: 1000px) {
+    .rectangle-s{
+        width: 60%
+    }
+    .logo-s{
+        height: 3.5%;
+        width: 12%;
+        margin: 1.5vh 1vw 1.5vh;
+    }
+}
+
 
