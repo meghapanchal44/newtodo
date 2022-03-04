@@ -138,8 +138,8 @@
    .forgot_label{
        width: 100%;
        height:10%;
-       padding-top: 1vh 4vw;
-       margin: auto;
+       padding-top: 1vh 1vw;
+       margin: 0vh 12vw;
        font-family: 'Nunito Sans';
        font-size: 14px;
        font-weight: normal;
@@ -149,12 +149,17 @@
        letter-spacing: normal;
        text-align: center;
        color: #51a8d1;
+       border-bottom: none;
+   }
+   .sign-up{
+       display: flex;
+       justify-content: center;
    }
    .dont{
-       width:100%;
+       width:50%;
        height: 2.8;
-       text-align: center;
        margin-top: 2vh;
+       margin-left: 8vw;
        opacity: 0.3;
        font-family: 'NunitoSans';
        font-size: 14px;
@@ -164,6 +169,20 @@
        line-height: 1.43;
        letter-spacing: normal;
        color: var(--dark);
+       text-align: right;
+   }
+   .link{
+    width:50%;
+    height: 2.8;
+    margin-top: 2vh;
+    font-family: 'NunitoSans';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    
    }
    footer{
     position: fixed;
@@ -181,7 +200,7 @@
    .footer{
       
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
   }
   .tag{
@@ -190,14 +209,14 @@
 
   .white{
       padding-left:5px;
-      width: 25%;
+      width: 75%;
       color: white;
-      opacity: 0.2;
+      opacity: 0.7;
       margin: 3px 5px 3px 0px;
   }
   .fa{
     color: white;
-    opacity: 0.2;
+    opacity: 0.7;
     margin: 6px 2px 2px 2px;
 }
 @media screen and (max-width: 700px) {
