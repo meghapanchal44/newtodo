@@ -233,6 +233,12 @@
     .rectangle-s{
         width: 60%
     }
+    .dont{
+        width:56%;
+    }
+    .link{
+        width:35%;
+    }
 }
 @media screen and (max-width: 500px) {
     h1{
