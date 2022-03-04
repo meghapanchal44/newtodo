@@ -153,7 +153,7 @@
        justify-content: center;
    }
    .dont{
-       width:53%;
+       width:55%;
        height: 2.8;
        margin-top: 2vh;
        /* margin-left: 8vw; */
@@ -169,7 +169,7 @@
        text-align: right;
    }
    .link{
-    width:47%;
+    width:45%;
     height: 2.8;
     margin-top: 2vh;
     font-family: 'NunitoSans';
@@ -238,8 +238,14 @@
     h1{
         font-size: 18px;
     }
+    .dont{
+        width:65%;
+    }
+    .link{
+        width:35%;
+    }
 }
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 800px) {
     .rectangle-s{
         width: 60%
     }
@@ -247,6 +253,9 @@
         height: 3.5%;
         width: 12%;
         margin: 1.5vh 1vw 1.5vh;
+    }
+    h1{
+        font-size: 28px;
     }
 }
 
