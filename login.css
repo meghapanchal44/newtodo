@@ -23,7 +23,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Nunito Sans';
    }
    a{
@@ -55,7 +55,7 @@
    }
    
    h1{
-       width:50%;
+       width:100%;
        height:5.4%;
        margin:auto;
        margin-top: 7.5vh;
@@ -66,7 +66,6 @@
        font-weight: 800;
        color: var(--dark);
    }
-   
   
    .rectangle-s{
        height:30%;
@@ -93,7 +92,7 @@
        outline: none;
        /* opacity: 0.06; */
        border-bottom: 2px solid #f7f8fa;
-       margin-bottom: 1vh;
+       margin-bottom: 3vh;
       
    }
    input[type=text]:hover{
@@ -115,7 +114,7 @@
        outline:none;
        /* opacity: 0.06; */
        border-bottom: 2px solid #f7f8fa;
-       margin-bottom: 1vh;
+       margin-bottom: 3vh;
       
    }    
    input[type=password]:hover{
@@ -141,13 +140,14 @@
        font-size: 0.8em;
        color: #51a8d1;
        border-bottom: none;
+       text-align: center;
    }
    .sign-up{
        display: flex;
        
    }
    .dont{
-       width:55%;
+       width:52%;
        height: 2.8;
        margin-top: 3vh;
        /* margin-left: 8vw; */
@@ -220,7 +220,7 @@
         margin-left: 23vw;
     } */
     .rectangle-s{
-        width: 38%
+        width: 60%
     }
     .dont{
         width:56%;
