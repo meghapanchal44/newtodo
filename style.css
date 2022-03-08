@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-header .logo {
+header .header__logo {
   margin: 0 auto;
   height: auto;
   width: auto;
@@ -36,7 +36,7 @@ main {
   min-height: calc(100vh - 15vh - 10vh);
 }
 
-main .container {
+main .main__container {
   width: 28%;
   margin: auto;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -46,7 +46,7 @@ main .container {
   padding: 2em 2em;
 }
 
-main .container .title {
+main .main__container .container__title {
   width: 100%;
   height: auto;
   margin: auto;
@@ -61,7 +61,7 @@ main .container .title {
   color: var(--white);
 }
 
-main .container .btn {
+main .main__container .container__btn {
   color: whitesmoke;
   border-radius: 4em;
   width: 100%;
@@ -73,19 +73,19 @@ main .container .btn {
   text-decoration: none;
 }
 
-main .container .btn.login {
+main .main__container .container__btn.container__btn_login {
   margin-top: 4vh;
   margin-bottom: 1vh;
   background-color: var(--tealish);
 }
 
-main .container .btn.sign-up {
+main .main__container .container__btn.container__btn_sign-up {
   margin-top: 2vh;
   margin-bottom: 1vh;
   background-color: #51a8d1;
 }
 
-main .container .or-section {
+main .main__container .container__or-section {
   margin: 4vh 0 1vh 0;
   color: white;
   display: -webkit-box;
@@ -97,7 +97,7 @@ main .container .or-section {
           justify-content: center;
 }
 
-main .container .or-section .line {
+main .main__container .container__or-section .container__or-section_line {
   border: solid 1px white;
   opacity: 0.5;
   margin: 1vh 1vw 1vh 1vw;
@@ -115,7 +115,7 @@ footer {
   bottom: 0;
 }
 
-footer .copyright {
+footer .footer__copyright {
   float: left;
   width: 70%;
   margin-right: auto;
@@ -125,12 +125,12 @@ footer .copyright {
   opacity: 0.7;
 }
 
-footer .social-icon {
+footer .footer__social-icon {
   margin-right: auto;
   width: 30%;
 }
 
-footer .social-icon .fa {
+footer .footer__social-icon .fa {
   float: right;
   color: white;
   opacity: 0.7;
@@ -143,7 +143,7 @@ footer .social-icon .fa {
   main {
     min-height: calc(100vh - 5vh - 5vh);
   }
-  main .container {
+  .main_container {
     width: 60%;
   }
 }
