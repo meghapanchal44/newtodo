@@ -33,7 +33,7 @@ header .header__logo {
 
 main {
   height: 100%;
-  min-height: calc(100vh - 15vh - 10vh);
+  min-height: calc(100vh - 15vh - 9.5vh);
 }
 
 main .main__container {
@@ -52,7 +52,7 @@ main .main__container .container__title {
   height: auto;
   margin: auto;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -126,7 +126,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1em;
+  padding: 0 4em;
   bottom: 0;
 }
 

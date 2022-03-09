@@ -78,7 +78,7 @@ main .main__container {
   background-color: var(--white);
 }
 
-main .container__label {
+main .container__label-email {
   width: 100%;
   height: 10%;
   padding-top: 0.5em;
@@ -88,7 +88,7 @@ main .container__label {
   color: var(--dark);
 }
 
-main .container__input {
+main .container__input-email {
   width: 100%;
   height: 10%;
   border: none;
@@ -96,6 +96,43 @@ main .container__input {
   /* opacity: 0.06; */
   border-bottom: 2px solid #f7f8fa;
   margin-bottom: 1em;
+}
+
+main .container__label-pass {
+  width: 100%;
+  height: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+  font-size: 1em;
+  color: var(--dark);
+}
+
+main .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container__input-pass {
+  width: 100%;
+  height: 10%;
+  border: none;
+  outline: none;
+  opacity: 0.06;
+  border-bottom: 2px solid black;
+  margin-bottom: 1em;
+}
+
+main .icon {
+  width: 20%;
+  float: right;
+  margin-left: 22vw;
+  position: absolute;
+  right: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
 }
 
 main .container__loginbtn {
@@ -151,14 +188,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1em;
+  padding: 0 4em;
   bottom: 0;
 }
 
 footer .footer__copyright {
   float: left;
   width: 70%;
-  margin-right: auto;
+  margin-right: 1em;
   margin-top: 0.5em;
   color: white;
   font-size: 0.8em;
@@ -191,6 +228,9 @@ footer .footer__social-icon .fa {
   }
   main .container__sign-up_link {
     width: 35%;
+  }
+  main .icon {
+    margin-left: 45vw;
   }
 }
 /*# sourceMappingURL=login.css.map */
