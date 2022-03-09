@@ -159,7 +159,10 @@ footer .footer__social-icon .fa {
     min-height: calc(100vh - 5vh - 5vh);
   }
   main .main__container {
-    width: 53%;
+    width: 60%;
+  }
+  main .main__container .container__title {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

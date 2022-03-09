@@ -146,6 +146,10 @@ footer {
         min-height: calc(100vh - 5vh - 5vh);
     }
     main .main__container{
-        width: 53%;
+        width: 60%;
+        // padding: 1em;
+    }
+    main .main__container .container__title {
+        font-size: 1.2em;
     }
 }
