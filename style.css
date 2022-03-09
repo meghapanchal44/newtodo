@@ -160,6 +160,7 @@ footer .footer__social-icon .fa {
   }
   main .main__container {
     width: 60%;
+    padding: 1.5em;
   }
   main .main__container .container__title {
     font-size: 1.2em;
