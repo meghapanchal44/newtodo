@@ -22,13 +22,13 @@ header .header__logo {
   margin: 0 auto;
   height: auto;
   width: auto;
-  max-width: 13em;
+  max-width: 10em;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 main {
@@ -37,13 +37,14 @@ main {
 }
 
 main .main__container {
-  width: 28%;
+  width: 25%;
+  height: auto;
   margin: auto;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--namjoon);
   border-radius: 0.5rem;
-  padding: 2em 2em;
+  padding: 3em 3em;
 }
 
 main .main__container .container__title {
@@ -62,15 +63,19 @@ main .main__container .container__title {
 }
 
 main .main__container .container__btn {
-  color: whitesmoke;
+  font-family: 'NunitoSans';
+  font-size: 1em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   border-radius: 4em;
   width: 100%;
-  height: 20%;
+  height: 25%;
   text-align: center;
-  padding: 0.5em 0.5em;
+  padding: 0.8em 0.8em;
   border: none;
-  font-size: 1em;
-  text-decoration: none;
 }
 
 main .main__container .container__btn.container__btn_login {
@@ -79,10 +84,20 @@ main .main__container .container__btn.container__btn_login {
   background-color: var(--tealish);
 }
 
+main .main__container .container__btn.container__btn_login a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 main .main__container .container__btn.container__btn_sign-up {
   margin-top: 2vh;
   margin-bottom: 1vh;
   background-color: #51a8d1;
+}
+
+main .main__container .container__btn.container__btn_sign-up a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 main .main__container .container__or-section {
@@ -143,8 +158,8 @@ footer .footer__social-icon .fa {
   main {
     min-height: calc(100vh - 5vh - 5vh);
   }
-  .main_container {
-    width: 60%;
+  main .main__container {
+    width: 53%;
   }
 }
 /*# sourceMappingURL=style.css.map */

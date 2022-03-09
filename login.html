@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,46 +11,45 @@
     <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div class="head">
-        <img src="logo.png" class="logo-s">
-        <span class="log text-style">Log in</span>
-    </div>
-
-    
-    <h1>Let's get started</h1>
-        <div class="container">
-            <div class="rectangle-s">
-                <div class="input">
-                    <label class="text-style input_label">
-                    Email or username
-                    </label>
-                    <input class="text-style" type="text" pattern=".+@globex\.com" size="30" required>
-                </div>
-                <label class="text-style pass_label">Password</label>
-                <input class="text-style" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-                <a href="reading-preference.html">
-                <button class="loginbtn text-style">Log in</button>
-                </a>
-                <div class="forgot_label text-style">
-                    <a href="forgot.html"> Forgot password?</a>
-                </div>
+    <header>
+        <img src="logo.png" class="header__logo">
+        <span class="login">Log in</span>
+    </header>
+    <main>
+        <h1 class="main__login-heading">Let's get started</h1>
+        <div class="main__container">
+            <label class="text-style container__label">
+                Email or username
+            </label>
+            <input class="text-style container__input" type="text" pattern=".+@globex\.com" size="30" required>
+            <label class="text-style container__label">Password</label>
+            <input class="text-style container__input" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+            <a href="reading-preference.html">
+                <button class="container__loginbtn text-style">Log in</button>
+            </a>
+            <div class="container__forgotdiv">
+            <a href="forgot.html" class="container__forgotdiv_forgot-label text-style"> Forgot password?</a>
             </div>
-        <div class="sign-up">
-            <p class="dont">don't have any account yet?</p>
-            <a href="sign-up.html" class="link text-style">Sign-up</a>      
         </div>
-    </div>
+        <div class="container__sign-up">
+            <span class="container__sign-up_text text-style">don't have any account yet?</span>
+            <a href="sign-up.html" class="container__sign-up_link text-style">Sign-up</a>
+        </div>
+    </main>
+    <footer>
+        <span class="footer__copyright">
+            © 2018 Rayft. All rights reserved.
+        </span>
+        <span class="footer__social-icon">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+        </span>
+    </footer>
+</body>
 
-        <footer class="footer">
-            <div class="white">
-                © 2018 Rayft. All rights reserved.
-            </div>
-            <div class="tag">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google"></i></a>
-            </div>
-        </footer>   
-    </body>
 </html>

@@ -1,253 +1,196 @@
 :root {
-    --namjoon: #183380;
-  
-    --dark: #242a41;
-  
-    --light-navy: #112970;
-  
-    --cobalt-two: #25439d;
-  
-    --white: #fff;
-  
-    --tealish: #20cdbb;
-  
-    --black-0: rgba(0, 0, 0, 0);
-  
+  --namjoon: #183380;
+  --dark: #242a41;
+  --light-navy: #112970;
+  --cobalt-two: #25439d;
+  --white: #fff;
+  --tealish: #20cdbb;
+  --black-0: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  background-color: var(--namjoon);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header__logo {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 60px;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+header .login {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0.5em 0em 0.5em 0em;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.text-style {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  /* text-align: center; */
+  font-family: 'Nunito Sans';
+}
+
+main {
+  height: 100%;
+  min-height: calc(100vh - 18vh);
+}
+
+main .main__login-heading {
+  width: 100%;
+  height: 5.4%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: 'Nunito Sans';
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+main .main__container {
+  height: auto;
+  width: 25%;
+  border-radius: 4px;
+  padding: 2em 2em;
+  margin: auto;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+
+main .container__label {
+  width: 100%;
+  height: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+  font-size: 1em;
+  color: var(--dark);
+}
+
+main .container__input {
+  width: 100%;
+  height: 10%;
+  border: none;
+  outline: none;
+  /* opacity: 0.06; */
+  border-bottom: 2px solid #f7f8fa;
+  margin-bottom: 1em;
+}
+
+main .container__loginbtn {
+  width: 100%;
+  height: 30%;
+  border: none;
+  background-color: var(--tealish);
+  border-radius: 22.5px;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+main .container__forgotdiv {
+  text-align: center;
+}
+
+main .container__forgotdiv .container__forgotdiv_forgot-label {
+  width: 100%;
+  height: 10%;
+  line-height: 1.43;
+  font-size: 0.8em;
+  color: #51a8d1;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+main .container__sign-up {
+  text-align: center;
+  margin-top: 2em;
+}
+
+main .container__sign-up .container__sign-up_text {
+  /* margin-left: 8vw; */
+  opacity: 0.3;
+  line-height: 1.43;
+  font-size: 0.9em;
+  color: var(--dark);
+}
+
+main .container__sign-up .container__sign-up_link {
+  font-size: 0.9em;
+  line-height: 1.43;
+  color: #51a8d1;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1c2646;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+  bottom: 0;
+}
+
+footer .footer__copyright {
+  float: left;
+  width: 70%;
+  margin-right: auto;
+  margin-top: 0.5em;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+footer .footer__social-icon {
+  margin-right: auto;
+  width: 30%;
+}
+
+footer .footer__social-icon .fa {
+  float: right;
+  color: white;
+  opacity: 0.7;
+  margin: 0.5em 0.5em;
+  font-size: 00.8em;
+  padding-right: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    min-height: calc(100vh - 15vh);
   }
-  *{
-    margin: 0;
-    padding: 0;
-}
-.text-style{
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    /* text-align: center; */
-    font-family: 'Nunito Sans';
-   }
-   a{
-    text-decoration: none;
-}
- .head{
-     height: 10%;
-     width: 100%;
-     background-color: var(--namjoon);
-     display: flex;
- }
- .logo-s{
-     position: absolute;
-     height: auto;
-     width: auto;
-     max-width: 60px;
-     margin: 1.5vh 1vw 1.5vh 2vw;
- }
- .log{
-     width: 100%;
-     text-align: center;
-     color: white;
-     margin: 1.5vh 0vw 1.5vh 0vw;
-     font-size: 0.9em;
-     font-weight: 800;
-     /* text-align: center; */
-     color: var(--white);
-     /* margin: auto; */
-   }
-   
-   h1{
-       width:100%;
-       height:5.4%;
-       margin:auto;
-       margin-top: 7.5vh;
-       margin-bottom: 7.5vh;
-       font-family: 'Nunito Sans';
-       text-align: center;
-       font-size: 2em;
-       font-weight: 800;
-       color: var(--dark);
-   }
-  
-   .rectangle-s{
-       height:30%;
-       width: 25%;
-       border-radius: 4px;
-       padding: 4vh 4vw;
-       margin: auto;
-       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-       background-color: var(--white);
-   }
-   .input_label{
-       width: 100%;
-       height:10%;
-       padding-top: 1vh;
-       padding-bottom: 1vh;
-       opacity: 0.3;
-       font-size: 1em;
-       color: var(--dark);
-   }
-   input[type=text]{
-       width: 100%;
-       height:10%;
-       border: none;
-       outline: none;
-       /* opacity: 0.06; */
-       border-bottom: 2px solid #f7f8fa;
-       margin-bottom: 3vh;
-      
-   }
-   input[type=text]:hover{
-    border-bottom: 2px solid rgb(0,204,255);
-   }
-   .pass_label{
-       width: 100%;
-       height:10%;
-       padding-top: 1vh;
-       opacity: 0.3;
-       font-size: 1em;
-       color: var(--dark);
-   }
-   input[type=password]{
-       width: 100%;
-       height:10%;
-       /* box-sizing: border-box; */
-       border: none;
-       outline:none;
-       /* opacity: 0.06; */
-       border-bottom: 2px solid #f7f8fa;
-       margin-bottom: 3vh;
-      
-   }    
-   input[type=password]:hover{
-    border-bottom: 2px solid rgb(0,204,255);
-   }
-   .loginbtn{
-       width: 100%;
-       height: 30%;
-       border: none;
-       background-color: var(--tealish);
-       border-radius: 22.5px;
-       color: white;
-       font-size: 1em;
-       padding: 1.5vh 1vw;
-       margin-top: 3vh;
-       margin-bottom: 3vh;
-   }
-   .forgot_label{
-       width: 100%;
-       height:10%;
-       padding-top: 1vh 1vw;
-       line-height: 1.43;
-       font-size: 0.8em;
-       color: #51a8d1;
-       border-bottom: none;
-       text-align: center;
-   }
-   .sign-up{
-       display: flex;
-       
-   }
-   .dont{
-       width:52%;
-       height: 2.8;
-       margin-top: 3vh;
-       /* margin-left: 8vw; */
-       opacity: 0.3;
-       line-height: 1.43;
-        font-size: 0.9em;
-       font-family: 'NunitoSans';
-       font-weight: normal;
-       font-stretch: normal;
-       font-style: normal;
-       letter-spacing: normal;
-       color: var(--dark);
-       text-align: right;
-   }
-   .link{
-    width:45%;
-    height: 2.8;
-    margin-top: 3vh;
-    font-size: 0.9em;
-    line-height: 1.43;
-    text-align: left;  
-   }
-   footer{
-    position: fixed;
-    bottom: 0;
-}
-.footer{
-    background-color: #1c2646;
-    width: 100vw;
-    height: 4.1%;
-    margin-top: 5vh;
-    box-sizing: border-box;
-    text-align: left;
-
-}
-   .footer{
-      
-    display: flex;
-    justify-content: space-between;
-
+  main .main__container {
+    width: 53%;
   }
-  .tag{
-      width:25%;
+  main .container__sign-up_text {
+    width: 56%;
   }
-
-  .white{
-      padding-left:5px;
-      width: 70%;
-      color: white;
-      font-size: 0.8rem;
-      opacity: 0.7;
-      margin: 1vh 1vw 1vh 10vw;
+  main .container__sign-up_link {
+    width: 35%;
   }
-  .fa{
-    color: white;
-    opacity: 0.7;
-    margin: 6px 2px 2px 2px;
-    font-size: 00.8rem;
-    padding-right: 1vw;
 }
-@media screen and (max-width: 800px) {
-   
-    /* .forgot_label{
-        margin: 0vh 5vw;
-    } */
-    /* .log{
-        margin: 1vh ;
-    } */
-    /* .dont{
-        margin-left: 23vw;
-    } */
-    .rectangle-s{
-        width: 60%
-    }
-    .dont{
-        width:56%;
-    }
-    .link{
-        width:35%;
-    }
-}
-@media screen and (max-width: 500px) {
-    
-    .dont{
-        width:65%;
-    }
-    .link{
-        width:35%;
-    }
-}
-@media screen and (min-height: 800px) {
-    .rectangle-s{
-        width: 60%
-    }
-    .logo-s{
-        height: auto;
-        width: auto;
-        margin: 1.5vh 1vw 1.5vh 2vw;
-    }
-    
-}
-
-
+/*# sourceMappingURL=login.css.map */
