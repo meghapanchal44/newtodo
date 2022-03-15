@@ -37,7 +37,7 @@ header {
 main {
     height: 100%;
     min-height: calc(100vh - 15vh - 9.5vh);
-    & .main__container {
+    .main__container {
         width: 25%;
         height: auto;
         margin: auto;
@@ -46,7 +46,7 @@ main {
         border-radius: 0.5rem;
         padding: 3em 3em;
         // margin-bottom: 5em;
-        & .container__title {
+        .container__title {
             width: 100%;
             height: auto;
             margin: auto;
@@ -60,7 +60,7 @@ main {
             text-align: center;
             color: var(--white);
         }
-        & .container__btn {
+        .container__btn {
             font-family: 'NunitoSans';
             font-size: 1em;          
             font-weight: 800;          
@@ -96,13 +96,13 @@ main {
             }
         }
 
-        & .container__or-section {
+        .container__or-section {
             margin: 4vh 0 1vh 0;
             color: white;
             display: flex;
             opacity: 0.5;
             justify-content: center;
-            & .container__or-section_line {
+            .container__or-section_line {
                 border: solid 1px white;
                 opacity: 0.5;
                 margin: 1vh 1vw 1vh 1vw;
@@ -113,34 +113,34 @@ main {
     }
 }
 
-footer {
-    background-color: #1c2646;
-    height: 100%;
-    display: flex;
-    padding: 0 4em;
-    bottom: 0;
-    .footer__copyright {
-        float: left;
-        width: 70%;      
-        margin-right: auto;
-        margin-top: 0.5em;
-        color: white;
-        font-size: 0.8em;
-        opacity: 0.7;
-    }
-    .footer__social-icon {
-        margin-right: auto;
-        width: 30%;
-        .fa {
-            float: right;
-            color: white;
-            opacity: 0.7;
-            margin: 0.5em 0.5em;
-            font-size: 00.8em;
-            padding-right: 1vw;
-        }
-    }
-}
+// footer {
+//     background-color: #1c2646;
+//     height: 100%;
+//     display: flex;
+//     padding: 0 4em;
+//     bottom: 0;
+//     .footer__copyright {
+//         float: left;
+//         width: 70%;      
+//         margin-right: auto;
+//         margin-top: 0.5em;
+//         color: white;
+//         font-size: 0.8em;
+//         opacity: 0.7;
+//     }
+//     .footer__social-icon {
+//         margin-right: auto;
+//         width: 30%;
+//         .fa {
+//             float: right;
+//             color: white;
+//             opacity: 0.7;
+//             margin: 0.5em 0.5em;
+//             font-size: 00.8em;
+//             padding-right: 1vw;
+//         }
+//     }
+// }
 @media screen and (max-width:750px){
     main{
         min-height: calc(100vh - 5vh - 5vh);

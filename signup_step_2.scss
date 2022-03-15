@@ -114,14 +114,15 @@ body{
     
 }
 @media screen and (max-width: 750px) {
-    .login-header .logo {
-        margin: 0.5em 1em 0.5em 1em;
-    }
     .signup-main-body {
         min-height: calc(100vh - 14vh);
     }
+    .signup-main-body .heading {
+        font-size: 1.2em;
+    }
     .signup-main-body .form{
-        width: 53%
+        width: 53%;
+        padding: 2em;
     }
     // .login-main-body .sign-up .text{
     //     width:56%;
@@ -132,8 +133,6 @@ body{
     .signup-main-body .form .pass_icon{
         margin-left: 45vw; 
     }
-    .main-footer{
-        padding: 0 2em;
-    }
+   
     
 }

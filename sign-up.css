@@ -218,6 +218,7 @@ body {
   }
   .signup-main-body .form {
     width: 53%;
+    padding: 2em;
   }
   .signup-main-body .form .pass_icon {
     margin-left: 45vw;

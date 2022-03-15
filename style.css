@@ -120,40 +120,6 @@ main .main__container .container__or-section .container__or-section_line {
   height: 1%;
 }
 
-footer {
-  background-color: #1c2646;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 4em;
-  bottom: 0;
-}
-
-footer .footer__copyright {
-  float: left;
-  width: 70%;
-  margin-right: auto;
-  margin-top: 0.5em;
-  color: white;
-  font-size: 0.8em;
-  opacity: 0.7;
-}
-
-footer .footer__social-icon {
-  margin-right: auto;
-  width: 30%;
-}
-
-footer .footer__social-icon .fa {
-  float: right;
-  color: white;
-  opacity: 0.7;
-  margin: 0.5em 0.5em;
-  font-size: 00.8em;
-  padding-right: 1vw;
-}
-
 @media screen and (max-width: 750px) {
   main {
     min-height: calc(100vh - 5vh - 5vh);
