@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="bootstrap-checkbox.min.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
-    <link rel="stylesheet" href="login.css" />
+    <!-- <link rel="stylesheet" href="login.css" /> -->
     <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="sign-up.css" />
     <script type="text/javascript" src="validation.js"></script>
     <title>Document</title>
 </head>
@@ -19,18 +21,31 @@
 <body>
     <header class="header">
         <img src="logo.png" class="logo">
-        <span class="login">Log In</span>
+        <span class="login">Sign Up</span>
     </header>
-    <main class="login-main-body">
+    <main class="signup-main-body">
         <h1 class="heading">Let's get started</h1>
         <form class="form" name="myform" id="myform" method="post">
+            <div class="fname">
+                <div >
+                <label class="text-style n-label">
+                    First Name
+                </label>
+                <input class="text-style n-input f" name="fname" id="fname" type="text">
+            </div>
+            <div>
+                <label class="text-style n-label">
+                    Last Name
+                </label>
+                <input class="text-style n-input l" name="lname" id="lmane" type="text">
+                </div>
+            </div>
             <div>
                 <label class="text-style label">
-                    Email or username
+                    Email address
                 </label>
                 <input class="text-style input" name="email" id="email" type="email">
             </div>
-
             <div>
                 <label class="text-style label">Password</label>
                 <!-- <input class="text-style container__input" id="myInput"> -->
@@ -41,16 +56,25 @@
                         required>   
                 </div>
             </div>
-            <a href="home-page.html">
-            <button type="button" id="submit" class="loginbtn text-style">Log In</button>
+            <label class="text-style label">Whats your purpose here?</label><br>
+                <div class="purose" >
+                    <div class="checkbox" >
+                        <input id="cb-1" class="checkbox-custom"  type="checkbox" value="reading" >
+                        <label for="cb-1" class="checkbox-custom-label ">Reading</label>  
+                    </div>
+                    <div class="checkbox">
+                        <input id="cb-2" class="checkbox-custom"  type="checkbox" value="reading" >
+                        <label for="cb-2" class="checkbox-custom-label "> Writing report</label>  
+                    </div>
+                </div>    
+            <a href="signup_step_2.html">
+            <button type="button" id="submit" class="nextbtn text-style">Next</button>
             </a>
-            <div class="forgotdiv">
-                <a href="forgot.html" class="forgot-label text-style"> Forgot password?</a>
-            </div>
+            
         </form>
         <div class="sign-up">
-            <span class="text text-style">Don't have any account yet?</span>
-            <a href="sign-up.html" class="link text-style">Sign-up</a>
+            <span class="text text-style">Already have any account yet?</span>
+            <a href="login.html" class="link text-style">Log-In</a>
         </div>
     </main>
     <footer class="footer">
@@ -64,5 +88,20 @@
         </span>
     </footer>
 </body>
+
+<!-- <script>
+
+const cb1 = document.getElementById("oneC");
+const color = document.getElementById("oneC");
+
+cb1.addEventListener('click',() => {
+    color.style.background = "black";
+});
+
+
+</script>
+ -->
+
+
 
 </html>

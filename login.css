@@ -12,33 +12,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f7f8fa;
-}
-
-header {
-  height: 10%;
-  width: 100%;
-  background-color: var(--namjoon);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .header__logo {
-  position: absolute;
-  height: auto;
-  width: auto;
-  max-width: 60px;
-  margin: 0.5em 1em 0.5em 4em;
-}
-
-header .login {
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  margin: 0.5em 0em 0.5em 0em;
-  font-size: 0.9em;
-  font-weight: 800;
-  color: var(--white);
   font-family: 'Nunito Sans';
 }
 
@@ -51,47 +24,47 @@ header .login {
   font-family: 'Nunito Sans';
 }
 
-main {
+.login-main-body {
   height: 100%;
   min-height: calc(100vh - 18vh);
 }
 
-main .main__login-heading {
+.login-main-body .heading {
   width: 100%;
   height: 5.4%;
   margin: auto;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-family: 'Nunito Sans';
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 800;
   color: var(--dark);
 }
 
-main .main__form {
+.login-main-body .form {
   height: auto;
   width: 25%;
   border-radius: 4px;
-  padding: 2em 2em;
+  padding: 2em 3em;
   margin: auto;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--white);
 }
 
-main .form__label {
+.login-main-body .form .label {
   width: 100%;
   height: 10%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   opacity: 0.3;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--dark);
   font-weight: bold;
 }
 
-main .form__input {
+.login-main-body .form .input {
   width: 100%;
   height: 10%;
   border: none;
@@ -99,13 +72,14 @@ main .form__input {
   /* opacity: 0.06; */
   border-bottom: 2px solid #f7f8fa;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-main .form__input:hover {
+.login-main-body .form .input:hover {
   border-bottom: 2px solid var(--tealish);
 }
 
-main .form__pass_icon {
+.login-main-body .form .pass_icon {
   width: auto;
   float: right;
   margin-left: 22vw;
@@ -116,11 +90,12 @@ main .form__pass_icon {
   opacity: 0.3;
 }
 
-main .error {
+.login-main-body .form .error {
   color: red;
+  font-size: 0.8em;
 }
 
-main .form__loginbtn {
+.login-main-body .form .loginbtn {
   width: 100%;
   height: 30%;
   border: none;
@@ -134,11 +109,11 @@ main .form__loginbtn {
   font-weight: bold;
 }
 
-main .form__forgotdiv {
+.login-main-body .form .forgotdiv {
   text-align: center;
 }
 
-main .form__forgotdiv .form__forgotdiv_forgot-label {
+.login-main-body .form .forgotdiv .forgot-label {
   width: 100%;
   height: 10%;
   line-height: 1.43;
@@ -148,81 +123,46 @@ main .form__forgotdiv .form__forgotdiv_forgot-label {
   text-decoration: none;
 }
 
-main .form__sign-up {
+.login-main-body .sign-up {
   text-align: center;
   margin-top: 2em;
 }
 
-main .form__sign-up .form__sign-up_text {
+.login-main-body .sign-up .text {
   /* margin-left: 8vw; */
   opacity: 0.3;
   line-height: 1.43;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--dark);
 }
 
-main .form__sign-up .form__sign-up_link {
-  font-size: 0.9em;
+.login-main-body .sign-up .link {
+  font-size: 0.8em;
   line-height: 1.43;
   color: #51a8d1;
   text-decoration: none;
 }
 
-footer {
-  background-color: #1c2646;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 4em;
-  bottom: 0;
-}
-
-footer .footer__copyright {
-  float: left;
-  width: 70%;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  color: white;
-  font-size: 0.8em;
-  opacity: 0.7;
-  font-family: 'Nunito Sans';
-}
-
-footer .footer__social-icon {
-  margin-right: auto;
-  width: 30%;
-}
-
-footer .footer__social-icon .fa {
-  float: right;
-  color: white;
-  opacity: 0.7;
-  margin: 0.5em 0.3em;
-  font-size: 0.8em;
-  padding-right: 1vw;
-}
-
 @media screen and (max-width: 750px) {
-  header .header__logo {
+  .login-header .logo {
     margin: 0.5em 1em 0.5em 1em;
   }
-  main {
+  .login-main-body {
     min-height: calc(100vh - 14vh);
   }
-  main .main__form {
+  .login-main-body .form {
     width: 53%;
   }
-  main .form__sign-up_text {
+  .login-main-body .sign-up .text {
     width: 56%;
   }
-  main .form__sign-up_link {
+  .login-main-body .sign-up .link {
     width: 35%;
   }
-  main .form__pass_icon {
+  .login-main-body .form .pass_icon {
     margin-left: 45vw;
   }
-  footer {
+  .main-footer {
     padding: 0 2em;
   }
 }

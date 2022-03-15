@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="bootstrap-checkbox.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <!-- <link rel="stylesheet" href="login.css" /> -->
+    <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="signup_step_2.css" />
+    <!-- <script type="text/javascript" src="validation.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.png" class="logo">
+        <span class="login">Reading preference</span>
+    </header>
+    <main class="signup-main-body">
+        <h1 class="heading"> What topics are you interested in?</h1>
+        <form class="form" name="myform" id="myform" method="post" onsubmit="myFunction(this)">
+            <div class="interest-m" id="interest-m">
+            <div class="interest">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" name="lang[]" class="checkbox-input"><span class="checkbox-span">Business</span>
+                </label>
+             </div>
+             <div class="interest  ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" name="lang[]" class="checkbox-input"><span class="checkbox-span">  Financal market</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" name="lang[]" class="checkbox-input"><span class="checkbox-span">  Market analysis</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" name="lang[]" class="checkbox-input"><span class="checkbox-span">  Interviews</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">  Media</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">  Public opinions</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">Economy</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">Polity and market</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">Business</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">  Financal market</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">  Market analysis</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">  Interviews</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">Bloomberg</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">Stocks & coins</span>
+                </label>
+             </div>
+             <div class="interest ">
+                <label class="checkbox-label">
+                   <input type="checkbox" value="1" class="checkbox-input"><span class="checkbox-span">IPO</span>
+                </label>
+             </div>
+            </div>
+             <a href="login.html">
+             <button type="button" id="submit" class="nextbtn text-style" onclick = " Validate()">  Get started</button>
+            </a>
+            <span name="formerror"></span>
+        </form>
+        <div class="sign-up">
+            <span class="text text-style">Skip this step</span>
+            <!-- <a href="sign-up.html" class="link text-style">Log-In</a> -->
+        </div>
+    </main>
+    <footer class="footer">
+        <span class="copyright">
+            © 2018 Rayft. All rights reserved.
+        </span>
+        <span class="social-icon">
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </span>
+    </footer>
+</body>
+<script type="text/javascript">
+ 
+//  function myFunction(form){
+     
+//    var i,
+//    chks = document.getElementsByName('lang[]');
+   
+//    for (i = 0; i < chks.length; i++){
+//      if (chks[i].checked){
+         
+//        //Here how i should alert selected values 
+
+//          alert("item is selected");
+//          return true;
+//      }
+//      else{
+//          alert('No item selected');
+//          return false;
+//      }
+//    }
+//  }
+function Validate() {
+        var checked = 0;
+ 
+        //Reference the Table.
+        var interest = document.getElementById("interest-m");
+ 
+        //Reference all the CheckBoxes in Table.
+        var chks = interest.getElementsByTagName("INPUT");
+ 
+        //Loop and count the number of checked CheckBoxes.
+        for (var i = 0; i < chks.length; i++) {
+            if (chks[i].checked) {
+                checked++;
+            }
+        }
+ 
+        if (checked > 0) {
+
+            // alert(checked + " interest(s) are selected.");
+            return true;
+        } else {
+            // alert("Please select interest(s).");
+            return false;
+        }
+    };
+    </script>
+
+
+</html>

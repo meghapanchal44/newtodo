@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  font-family: 'Nunito Sans';
+}
+
+.signup-main-body {
+  height: 100%;
+  min-height: calc(100vh - 18vh);
+}
+
+.signup-main-body .heading {
+  width: 100%;
+  height: 5.4%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-family: 'Nunito Sans';
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.signup-main-body .form {
+  height: auto;
+  width: 25%;
+  border-radius: 4px;
+  padding: 2em 3em;
+  margin: auto;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+
+.signup-main-body .form .fname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signup-main-body .form .n-label {
+  width: 100%;
+  height: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+  font-size: 0.8em;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.signup-main-body .form .n-input {
+  height: 20%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f7f8fa;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.signup-main-body .form .n-input.f {
+  width: 90%;
+}
+
+.signup-main-body .form .n-input.l {
+  width: 100%;
+}
+
+.signup-main-body .form .n-input:hover {
+  border-bottom: 2px solid var(--tealish);
+}
+
+.signup-main-body .form .label {
+  width: 100%;
+  height: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+  font-size: 0.8em;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.signup-main-body .form .input {
+  width: 100%;
+  height: 10%;
+  border: none;
+  outline: none;
+  /* opacity: 0.06; */
+  border-bottom: 2px solid #f7f8fa;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.signup-main-body .form .input:hover {
+  border-bottom: 2px solid var(--tealish);
+}
+
+.signup-main-body .form .pass_icon {
+  width: auto;
+  float: right;
+  margin-left: 22vw;
+  position: absolute;
+  right: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
+}
+
+.signup-main-body .form .error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.signup-main-body .form .purose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup-main-body .form .purose .checkbox {
+  width: 50%;
+}
+
+.signup-main-body .form .checkbox-custom:checked + .checkbox-custom-label {
+  opacity: 0.9;
+}
+
+.signup-main-body .form .checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.signup-main-body .form .checkbox-custom,
+.signup-main-body .form .checkbox-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.8em;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-main-body .form .checkbox-custom-label {
+  position: relative;
+  opacity: 0.3;
+}
+
+.signup-main-body .form .checkbox-custom + .checkbox-custom-label:before {
+  content: "";
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.signup-main-body .form .checkbox-custom + .checkbox-custom-label:before {
+  border-radius: 50%;
+}
+
+.signup-main-body .form .checkbox-custom:checked + .checkbox-custom-label:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: var(--white);
+  background-color: var(--tealish);
+  border: 1px solid var(--tealish);
+}
+
+.signup-main-body .form .nextbtn {
+  width: 100%;
+  height: 30%;
+  border: none;
+  background-color: var(--tealish);
+  border-radius: 22.5px;
+  color: var(--white);
+  font-size: 0.9em;
+  padding: 0.5em 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.signup-main-body .sign-up {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.signup-main-body .sign-up .text {
+  /* margin-left: 8vw; */
+  opacity: 0.3;
+  line-height: 1.43;
+  font-size: 0.8em;
+  color: var(--dark);
+}
+
+.signup-main-body .sign-up .link {
+  font-size: 0.8em;
+  line-height: 1.43;
+  color: #51a8d1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  .login-header .logo {
+    margin: 0.5em 1em 0.5em 1em;
+  }
+  .signup-main-body {
+    min-height: calc(100vh - 14vh);
+  }
+  .signup-main-body .form {
+    width: 53%;
+  }
+  .signup-main-body .form .pass_icon {
+    margin-left: 45vw;
+  }
+  .main-footer {
+    padding: 0 2em;
+  }
+}
+/*# sourceMappingURL=sign-up.css.map */
