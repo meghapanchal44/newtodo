@@ -124,7 +124,7 @@ body {
 }
 
 .signup-main-body .form .purose .checkbox {
-  width: 50%;
+  margin: 1vh 2vw;
 }
 
 .signup-main-body .form .checkbox-custom:checked + .checkbox-custom-label {
@@ -210,18 +210,15 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .login-header .logo {
-    margin: 0.5em 1em 0.5em 1em;
-  }
   .signup-main-body {
     min-height: calc(100vh - 14vh);
   }
   .signup-main-body .form {
-    width: 53%;
+    width: 60%;
     padding: 2em;
   }
   .signup-main-body .form .pass_icon {
-    margin-left: 45vw;
+    margin-left: 55vw;
   }
   .main-footer {
     padding: 0 2em;

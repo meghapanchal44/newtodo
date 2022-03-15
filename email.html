@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/
+     jquery/3.3.1/jquery.min.js">
+    </script>
+    <title>email valid</title>
+</head>
+<body>
+    <form>
+    <div class="form-group">
+        <label for="user">
+              Email:
+        </label>
+        <input type="email" name="email"
+          id="email"
+          class="form-control">
+        <span id="emailvalid" class="form-text
+          text-muted invalid-feedback">
+            please enter your email
+        </span>
+    </div>
+
+    <div class="form-group">
+        <label for="password">
+              Password:
+        </label>
+        <input type="password" name="pass"
+          id="password" class="form-control">
+        <span id="passcheck">
+          Please Fill the password
+        </span>
+    </div>
+    <input type="submit" id="submitbtn"
+             value="Submit" class="btn btn-primary">  
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

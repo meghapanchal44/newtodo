@@ -39,13 +39,16 @@ body {
   border: solid 1px rgba(36, 42, 65, 0.2);
   border-radius: 22.5px;
   overflow: hidden;
-  display: inline-block;
+  display: -ms-inline-grid;
+  display: inline-grid;
   font-size: 00.8em;
   margin: 00.5em 0.3em;
 }
 
 .signup-main-body .form .interest .checkbox-label {
-  float: left;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 30%;
   font-family: 'Nunito Sans';
   font-size: 00.8em;
@@ -111,11 +114,32 @@ body {
     font-size: 1.2em;
   }
   .signup-main-body .form {
-    width: 53%;
+    width: 60%;
     padding: 2em;
   }
   .signup-main-body .form .pass_icon {
     margin-left: 45vw;
+  }
+  .signup-main-body .form .interest {
+    font-size: 00.7em;
+    margin: 00.4em 0.2em;
+  }
+  .signup-main-body .form .interest .checkbox-label {
+    height: 20%;
+    font-size: 00.7em;
+  }
+  .signup-main-body .form .interest .checkbox-label .checkbox-span {
+    padding: 0.4em 1em;
+  }
+  .signup-main-body .form .interest .checkbox-input:checked + .checkbox-span {
+    height: 20%;
+  }
+  .signup-main-body .form .nextbtn {
+    height: 20%;
+    margin-top: 1vh;
+    padding: 1.5vh 1vw;
+    position: relative;
+    left: 4vw;
   }
 }
 /*# sourceMappingURL=signup_step_2.css.map */

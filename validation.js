@@ -17,6 +17,7 @@ $(document).ready(function () {
                 email: {
                     required: "enter valid email"
                 }
+                
             }
         }
     })
