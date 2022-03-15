@@ -70,4 +70,13 @@
   font-size: 0.8em;
   padding-right: 1vw;
 }
+
+@media screen and (max-width: 750px) {
+  .header .logo {
+    margin: 0.5em 1em 0.5em 1em;
+  }
+  .footer {
+    padding: 0 2em;
+  }
+}
 /*# sourceMappingURL=header-footer.css.map */

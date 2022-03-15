@@ -19,14 +19,14 @@
     width: 100%;
     background-color: var(--namjoon);
     display: flex;
-    & .logo{
+    .logo{
      position: absolute;
      height: auto;
      width: auto;
      max-width: 60px;
      margin: 0.5em 1em 0.5em 4em;
     }
-    & .login{
+    .login{
      width: 100%;
      text-align: center;
      color: var(--white);
@@ -64,5 +64,13 @@
             font-size: 0.8em;
             padding-right: 1vw;
         }
+    }
+}
+@media screen and (max-width: 750px) {
+    .header .logo {
+        margin: 0.5em 1em 0.5em 1em;
+    }
+    .footer{
+        padding: 0 2em;
     }
 }
