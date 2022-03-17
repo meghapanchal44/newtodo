@@ -27,14 +27,30 @@ body {
   height: auto;
   width: 38%;
   border-radius: 4px;
-  padding: 2em 4em;
+  padding: 2em 3em;
   margin: auto;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--white);
 }
 
-.signup-main-body .form .interest {
+.signup-main-body .form .interest-m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-main-body .form .interest-m .interest {
+  justify-items: center;
   background-color: var(--white);
   border: solid 1px rgba(36, 42, 65, 0.2);
   border-radius: 22.5px;
@@ -45,7 +61,7 @@ body {
   margin: 00.5em 0.3em;
 }
 
-.signup-main-body .form .interest .checkbox-label {
+.signup-main-body .form .interest-m .interest .checkbox-label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -54,7 +70,7 @@ body {
   font-size: 00.8em;
 }
 
-.signup-main-body .form .interest .checkbox-label .checkbox-span {
+.signup-main-body .form .interest-m .interest .checkbox-label .checkbox-span {
   text-align: center;
   padding: 0.1em;
   opacity: 0.3;
@@ -64,13 +80,13 @@ body {
   padding: 0.5em 2em;
 }
 
-.signup-main-body .form .interest .checkbox-label .checkbox-input {
+.signup-main-body .form .interest-m .interest .checkbox-label .checkbox-input {
   position: absolute;
   display: none;
   color: #fff !important;
 }
 
-.signup-main-body .form .interest .checkbox-input:checked + .checkbox-span {
+.signup-main-body .form .interest-m .interest .checkbox-input:checked + .checkbox-span {
   color: #51a8d1;
   opacity: 0.9;
   border: solid 1px #51a8d1;
@@ -116,9 +132,6 @@ body {
   .signup-main-body .form {
     width: 60%;
     padding: 2em;
-  }
-  .signup-main-body .form .pass_icon {
-    margin-left: 45vw;
   }
   .signup-main-body .form .interest {
     font-size: 00.7em;

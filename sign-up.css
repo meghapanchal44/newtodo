@@ -1,3 +1,13 @@
+:root {
+  --namjoon: #183380;
+  --dark: #242a41;
+  --light-navy: #112970;
+  --cobalt-two: #25439d;
+  --white: #fff;
+  --tealish: #20cdbb;
+  --black-0: rgba(0, 0, 0, 0);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -153,7 +163,7 @@ body {
 
 .signup-main-body .form .checkbox-custom + .checkbox-custom-label:before {
   content: "";
-  border: 1px solid #ddd;
+  border: 1px solid #726f6f;
   display: inline-block;
   vertical-align: middle;
   width: 1em;
@@ -216,6 +226,9 @@ body {
   .signup-main-body .form {
     width: 60%;
     padding: 2em;
+  }
+  .signup-main-body .form .purose .checkbox {
+    margin: 1vh 1vw;
   }
   .signup-main-body .form .pass_icon {
     margin-left: 55vw;

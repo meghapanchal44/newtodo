@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('#submit').click(function () {
         $('#myform').submit()
         if ($('#myform').valid()) {
-            window.location = "sign-up.html"
+            window.location = "signup_step_2.html"
         }
     });
 });
