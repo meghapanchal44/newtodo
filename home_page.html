@@ -1,133 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="bootstrap-checkbox.min.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
-        <!-- <link rel="stylesheet" href="login.css" /> -->
-        <!-- <link rel="stylesheet" href="header-footer.css" /> -->
-        <link rel="stylesheet" href="home_page.css" />
-        <!-- <script type="text/javascript" src="validation.js"></script> -->
-        <title>Document</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="bootstrap-checkbox.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <!-- <link rel="stylesheet" href="login.css" /> -->
+    <!-- <link rel="stylesheet" href="header-footer.css" /> -->
+    <link rel="stylesheet" href="home_page.css" />
+    <!-- <script type="text/javascript" src="validation.js"></script> -->
+    <title>Document</title>
+</head>
+
 <body>
     <header class="header">
-        <img src="logo.png" class="logo">
-        <div class="search">
-            <input type="text" class="input" style="color: black;" placeholder="Search article, authoer, stocks, topics…">
-            <a href="#"><i class="fa fa-search tag"></i></a>
+        <div class="searchbar">
+            <img src="logo.png" class="logo">
+            <div class="search">
+                <input type="text" class="input" style="color: black;"
+                    placeholder="Search article, authoer, stocks, topics…">
+                <a href="#"><i class="fa fa-search tag"></i></a>
+
+            </div>
         </div>
         <nav class="nav">
             <a href="#"><i class="fa fa-bandcamp"></i> <span class="label">Explore</span></a>
-            <a href="#"><i class="fa fa-bookmark"></i> <span class="label">Bookmark</span></a>
+            <a href="#"><i class="fa fa-bookmark-product"></i> <span class="label">Bookmark</span></a>
             <a href="#"><i class="fa fa-pencil-square"></i><span class="label">Start writting</span></a>
             <a href="#"><i class="fa fa-wallet"></i></a>
             <a href="#"><i class="fa fa-bell"></i></a>
             <a href="#"><i class="fa fa-user-circle"></i></a>
         </nav>
-    </header>  
+    </header>
     <main class="body">
         <div class="heading">
-            <span class="h3"><b>Hi, Fannie </b> 
+            <span class="h3"><b>Hi, Fannie </b>
                 here is a personalized feed for you…</span>
-            <span class="h5" >suggested by your personal interest</span>
+            <span class="h5">suggested by your personal interest</span>
         </div>
         <span class="read">You are intrested to read…</span>
-        <div class="img-read">
-            <div class="img-detail">
-                <img src="rectangle-5.jpg" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+        <div class="product">
+            <div class="product_detail">
+                <img src="rectangle-5.jpg" class="product-img">
+                <i class="fa fa-bookmark-o bookmark-product"></i>
+                <i class="fa fa-ellipsis-v more-detail"></i>
+                <span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>    
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
             </div>
-            <div class="img-detail">
-                <img src="rectangle-5.png" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+            <div class="product_detail">
+                <img src="rectangle-5.png" class="product-img">
+                <i class="fa fa-bookmark-o bookmark-product "></i>
+                <i class="fa fa-ellipsis-v more-detail"></i>
+                <span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
-            </div>      
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
         </div>
         <div class="row-1">
-            <div class="img-detail">
-                <img src="rectangle-5.jpg" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+            <div class="product_detail">
+                <img src="rectangle-5.jpg" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>    
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
             </div>
-            <div class="img-detail">
-                <img src="rectangle-5.png" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+            <div class="product_detail">
+                <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i>
+                    <span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
             </div>
-            <div class="img-detail">
-                <img src="rectangle-5.png" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+            <div class="product_detail">
+                <img src="rectangle-5.png" class="product-img"><i
+                    class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
-            </div>       
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
         </div>
         <div class="row-2">
-            <div class="img-detail-1">
-                <img src="rectangle-5.jpg" class="img-click-1">
-                <div class="img-description">  If you got pitched for investment 200 times per week, you might miss a good one too. Or you might discover Facebook</div>
+            <div class="product_detail-1">
+                <img src="rectangle-5@3x.png" class="product-img-1"><i class="fa fa-bookmark-o bookmark-product"></i><i class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> If you got pitched for investment 200 times per week, you might
+                    miss a good one too. Or you might discover Facebook</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>    
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
             </div>
-            <div class="img-detail-2">
-                <img src="rectangle-5.png" class="img-click-2">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
+            <div class="product_detail-2">
+                <img src="rectangle-5.png" class="product-img-2"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for college</div>
                 <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
-            </div>      
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
         </div>
-        <div class="row-1">
-            <div class="img-detail">
-                <img src="rectangle-5.jpg" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
-                <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>    
+        <div class="recomonded-articles">
+            <div class="view-more">
+                <span class="rayft-articles"> Rayft recommended articles</span>
+                <span class="view">view more <i class="fa fa-chevron-right"></i></span>
             </div>
-            <div class="img-detail">
-                <img src="rectangle-5.png" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
-                <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
+            <div class="row-3">
+                <div class="product_detail">
+                    <img src="rectangle-5.jpg" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail">
+                    <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail">
+                    <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
             </div>
-            <div class="img-detail">
-                <img src="rectangle-5.png" class="img-click">
-                <div class="img-description">  These tips could help you get more financial aid for college</div>
-                <div class="sub-detail">
-                    <span class="img-owner">Floyd West</span>
-                    <span class="image-upload-date">23 mar read</span>
-                </div>     
-            </div>       
         </div>
-       
+        <div class="business">
+            <div class="business-label">
+                <span>Because you are following <b class="bold">Business</b> </span>
+                <span><i class="fa fa-ellipsis-v"></i></span>
+            </div>
+            <div class="business row-2">
+                <div class="product_detail-1">
+                    <img src="rectangle-5.jpg" class="product-img-1"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> If you got pitched for investment 200 times per week, you might
+                        miss a good one too. Or you might discover Facebook</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail-2">
+                    <img src="rectangle-5.png" class="product-img-2"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+            </div>
+            <div class="business row-1">
+                <div class="product_detail">
+                    <img src="rectangle-5.jpg" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail">
+                    <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail">
+                    <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span><i
+                            class="fa fa-bookmark-product-o bookmark-product"></i><i
+                            class="fa fa-ellipsis-v more"></i><span class="price">$ 45.03</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="might-like">
+            <div class="view-more">
+                <span class="rayft-articles">New authors you might like</span>
+                <span class="view">View more <i class="fa fa-chevron-right"></i></span>
+            </div>
+            <div class="might-like-images">
+                <div class="auther-detail">
+                    <img src="shape.png" class="auther-img">
+                    <div class="auther-description"> Mildred Grant</div>
+                    <div class="sub-detail">
+                        <span class="auther-follower">5.3k followers</span>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span class="auther-folowing">43 following</span>
+                    </div>
+                    <button class="follow-auther">Follow</button>
+                </div>
+            <!-- </div>
+            <div class="might-like-images"> -->
+                <div class="auther-detail">
+                    <img src="shape.png" class="auther-img">
+                    <div class="auther-description"> Mildred Grant</div>
+                    <div class="sub-detail">
+                        <span class="auther-follower">5.3k followers</span>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span class="auther-folowing">43 following</span>
+                    </div>
+                    <button class="follow-auther">Follow</button>
+                </div>
+            <!-- </div>
+            <div class="might-like-images"> -->
+                <div class="auther-detail">
+                    <img src="shape.png" class="auther-img">
+                    <div class="auther-description"> Mildred Grant</div>
+                    <div class="sub-detail">
+                        <span class="auther-follower">5.3k followers</span>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span class="auther-folowing">43 following</span>
+                    </div>
+                    <button class="follow-auther">Follow</button>
+                </div>
+            <!-- </div>
+            <div class="might-like-images"> -->
+                <div class="auther-detail">
+                    <img src="shape.png" class="auther-img">
+                    <div class="auther-description"> Mildred Grant</div>
+                    <div class="sub-detail">
+                        <span class="auther-follower">5.3k followers</span>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span class="auther-folowing">43 following</span>
+                    </div>
+                    <button class="follow-auther">Follow</button>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="business">
+            <div class="business-label">
+                <span>You are likely to get update on <b class="bold">Marketing</b> </span>
+                <span><i class="fa fa-ellipsis-v"></i></span>
+            </div>
+            <div class="business row-2">
+                <div class="product_detail-1">
+                    <img src="rectangle-5.jpg" class="product-img-1"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> If you got pitched for investment 200 times per week,
+                        you might miss a good one too. Or you might discover Facebook</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+                <div class="product_detail-2">
+                    <img src="rectangle-5.png" class="product-img-2"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                        class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                    <div class="product-description"> These tips could help you get more financial aid for
+                        college</div>
+                    <div class="sub-detail">
+                        <span class="product-owner">Floyd West</span>
+                        <span class="product-upload-date">23 mar read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="business row-1">
+            <div class="product_detail">
+                <img src="rectangle-5.jpg" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for
+                    college</div>
+                <div class="sub-detail">
+                    <span class="product-">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
+            <div class="product_detail">
+                <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for
+                    college</div>
+                <div class="sub-detail">
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
+            <div class="product_detail">
+                <img src="rectangle-5.png" class="product-img"><i class="fa fa-bookmark-o bookmark-product"></i><i
+                    class="fa fa-ellipsis-v more-detail"></i><span class="product-price">$ 45.03</span>
+                <div class="product-description"> These tips could help you get more financial aid for
+                    college</div>
+                <div class="sub-detail">
+                    <span class="product-owner">Floyd West</span>
+                    <span class="product-upload-date">23 mar read</span>
+                </div>
+            </div>
+        </div>
+
     </main>
+    <footer class="footer">
+        <span class="copyright">
+            © 2018 Rayft. All rights reserved.
+        </span>
+        <span class="social-icon">
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </span>
+    </footer>
 </body>
+
 </html>
