@@ -1,0 +1,64 @@
+.container-of-article{
+    cursor: pointer;
+    display: flex;
+    .article{
+    width: auto;
+    margin: 1em;
+    border-radius: 3px;  
+    // background-image: linear-gradient(to right, var(--black-0) 77%, rgba(0, 0, 0, 0.3)); 
+        &__bookmark{
+        float: right;
+        position: relative;
+        left: -5em;
+        right: 7em;
+        top:1em;
+        margin-right:-2em;
+        color: var(--white);
+        } 
+       
+        &__price{
+        float: right;
+        position: relative;
+        left: -3em;
+        right: 7em;
+        top:-2em;
+        margin-right:-2em;
+        color: var(--white);
+        border-color:2px solid var(--white) ;
+        border-radius: 22px;
+        font-size: 1em;
+        }
+        &__img{
+        width: 100%;
+            &_big{
+                width: 60vw;
+                height: 22vh;
+            }
+        }
+        &__description{
+        font-family: 'Nunito Sans';
+        font-size: 1.3em;
+        font-weight: 800;
+        // font-stretch: normal;
+        // font-style: normal;
+        line-height: 1.35;
+        // letter-spacing: normal;
+        color: var(--dark);
+        padding:0.5em 1em;
+        }
+        &__sub-detail{
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.6;
+        font-size: 0.7em;
+        font-weight: 600;
+        // font-stretch: normal;
+        // font-style: normal;
+        // line-height: normal;
+        // letter-spacing: normal;
+        color: var(--dark);
+        padding: 0.5em 2em;
+        }
+    }
+    
+}

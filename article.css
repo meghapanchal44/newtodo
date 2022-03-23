@@ -1,0 +1,68 @@
+.container-of-article {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-of-article .article {
+  width: auto;
+  margin: 1em;
+  border-radius: 3px;
+}
+
+.container-of-article .article__bookmark {
+  float: right;
+  position: relative;
+  left: -5em;
+  right: 7em;
+  top: 1em;
+  margin-right: -2em;
+  color: var(--white);
+}
+
+.container-of-article .article__price {
+  float: right;
+  position: relative;
+  left: -3em;
+  right: 7em;
+  top: -2em;
+  margin-right: -2em;
+  color: var(--white);
+  border-color: 2px solid var(--white);
+  border-radius: 22px;
+  font-size: 1em;
+}
+
+.container-of-article .article__img {
+  width: 100%;
+}
+
+.container-of-article .article__img_big {
+  width: 60vw;
+  height: 22vh;
+}
+
+.container-of-article .article__description {
+  font-family: 'Nunito Sans';
+  font-size: 1.3em;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--dark);
+  padding: 0.5em 1em;
+}
+
+.container-of-article .article__sub-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.6;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--dark);
+  padding: 0.5em 2em;
+}
+/*# sourceMappingURL=article.css.map */
